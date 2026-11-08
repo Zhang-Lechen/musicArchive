@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.npm-cache/
+coverage/
+playwright-report/
+test-results/
+package-lock.json
+PLAN.md
+classical-listening-app-development-plan.md
+classical-listening-A1-incremental-plan.md
+plans/
+scripts/sources/
+src/data/catalog.json
+docs/catalog-report.json
+docs/catalog-dry-run.json

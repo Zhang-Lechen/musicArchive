@@ -1,0 +1,60 @@
+{
+  "name": "classical-listening-archive",
+  "private": true,
+  "version": "0.1.0",
+  "description": "本地优先的古典音乐作品目录与个人聆听档案",
+  "type": "module",
+  "engines": {
+    "node": ">=22.14.0 <23 || >=24.0.0 <25 || >=26.0.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:e2e": "npm run build && playwright test",
+    "catalog:fetch": "tsx scripts/catalog.ts --fetch --all",
+    "catalog:build": "tsx scripts/catalog.ts",
+    "catalog:check": "tsx scripts/catalog.ts --dry-run --report docs/catalog-dry-run.json",
+    "seed:build": "tsx scripts/make-seed.ts"
+  },
+  "dependencies": {
+    "dexie": "^4.4.7",
+    "dexie-react-hooks": "^4.4.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "^1.64.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/node": "^22.14.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.2.1",
+    "eslint": "10.14.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "fake-indexeddb": "^6.2.7",
+    "globals": "17.14.0",
+    "jsdom": "26.1.0",
+    "prettier": "3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.5",
+    "vitest": "5.1.0"
+  }
+}

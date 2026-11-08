@@ -1,0 +1,749 @@
+{
+  "composers": [
+    {
+      "id": "06198325-ec62-504d-ad3d-2ce62d7e7dd7",
+      "nameOriginal": "Johann Sebastian Bach",
+      "nameZh": "巴赫",
+      "aliases": ["巴哈", "Bach"],
+      "birthYear": 1685,
+      "deathYear": 1750,
+      "era": "Baroque",
+      "primaryCatalog": "BWV",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/87/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    },
+    {
+      "id": "50f7dec6-efa1-55c9-a9fe-19931d21f8dc",
+      "nameOriginal": "Antonio Vivaldi",
+      "nameZh": "维瓦尔第",
+      "aliases": ["韦瓦第", "Vivaldi"],
+      "birthYear": 1678,
+      "deathYear": 1741,
+      "era": "Baroque",
+      "primaryCatalog": "RV",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/98/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    },
+    {
+      "id": "7ec4fa95-8cb9-52eb-a084-1f1e742aee8e",
+      "nameOriginal": "Franz Joseph Haydn",
+      "nameZh": "海顿",
+      "aliases": ["Haydn"],
+      "birthYear": 1732,
+      "deathYear": 1809,
+      "era": "Classical",
+      "primaryCatalog": "Hob.",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/208/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    },
+    {
+      "id": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "nameOriginal": "Wolfgang Amadeus Mozart",
+      "nameZh": "莫扎特",
+      "aliases": ["莫札特", "Mozart"],
+      "birthYear": 1756,
+      "deathYear": 1791,
+      "era": "Classical",
+      "primaryCatalog": "K.",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/196/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    },
+    {
+      "id": "89f45ed4-c8ea-5405-a3d4-a50cae55e8c8",
+      "nameOriginal": "Ludwig van Beethoven",
+      "nameZh": "贝多芬",
+      "aliases": ["Beethoven"],
+      "birthYear": 1770,
+      "deathYear": 1827,
+      "era": "Early Romantic",
+      "primaryCatalog": "Op. / WoO / Hess",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/145/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    },
+    {
+      "id": "557bc25e-b6d0-58d0-a32f-d3eca659ce40",
+      "nameOriginal": "Franz Schubert",
+      "nameZh": "舒伯特",
+      "aliases": ["Schubert"],
+      "birthYear": 1797,
+      "deathYear": 1828,
+      "era": "Early Romantic",
+      "primaryCatalog": "D.",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/183/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    },
+    {
+      "id": "cc6087ac-e061-5ce9-abba-8541a604905a",
+      "nameOriginal": "Frédéric Chopin",
+      "nameZh": "肖邦",
+      "aliases": ["萧邦", "Chopin"],
+      "birthYear": 1810,
+      "deathYear": 1849,
+      "era": "Romantic",
+      "primaryCatalog": "Op.",
+      "coverageStatus": "sample",
+      "source": {
+        "name": "Open Opus",
+        "url": "https://api.openopus.org/work/list/composer/152/genre/all.json",
+        "license": "CC0-1.0",
+        "retrievedAt": "2026-11-03T16:49:56.172Z",
+        "catalogEdition": "来源未注明版次"
+      }
+    }
+  ],
+  "works": [
+    {
+      "id": "7709e903-b111-5b77-a797-4b0418b87c19",
+      "composerId": "06198325-ec62-504d-ad3d-2ce62d7e7dd7",
+      "titleOriginal": "Brandenburg Concerto no. 3 in G major, BWV.1048",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "e22298f1-c7f3-5ab2-a49f-e532cfac597d",
+      "composerId": "50f7dec6-efa1-55c9-a9fe-19931d21f8dc",
+      "titleOriginal": "La primavera  in E major, RV.269, op. 8, no. 1",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "d43490dc-aad8-5e00-a81d-74d0bd31cb2c",
+      "composerId": "7ec4fa95-8cb9-52eb-a084-1f1e742aee8e",
+      "titleOriginal": "Symphony no. 94 in G, Hob.I:94, \"Surprise\"",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "5b3a0f18-4f91-5a68-ac92-7a080a7ece7d",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Clarinet Concerto in A major, K.622",
+      "titleZh": "A大调单簧管协奏曲",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "7623c0b8-e615-5bae-a4ff-e0154b5c863a",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Clarinet Quintet in A major, K.581",
+      "titleZh": "A大调单簧管五重奏",
+      "genre": "Chamber",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "7e5a93c7-ebd5-5da4-acf7-c50e18080ac7",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Le nozze di Figaro, K.492",
+      "titleZh": "费加罗的婚礼",
+      "genre": "Stage",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "b6b47509-3b1b-5c2a-af60-983c2bc5c738",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Piano Concerto no. 20 in D minor, K.466",
+      "titleZh": "D小调第20钢琴协奏曲",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "7abba76a-81ba-50e1-a9d4-3514c4851264",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Piano Concerto no. 21 in C major, K.467",
+      "titleZh": "C大调第21钢琴协奏曲",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "4defac41-db20-5f4d-a3dd-da3ece2a975a",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Piano Concerto no. 23 in A major, K.488",
+      "titleZh": "A大调第23钢琴协奏曲",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "4a4ca9d1-5978-58f4-a078-5bdb12efa5dd",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Piano Sonata no. 11 in A major, K.331, \"Alla turca\"",
+      "titleZh": "A大调第11钢琴奏鸣曲《土耳其进行曲》",
+      "genre": "Keyboard",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "0925b185-c6b0-5eed-a567-ff45c5733e4a",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Requiem in D minor, K.626",
+      "titleZh": "D小调安魂曲",
+      "genre": "Vocal",
+      "kind": "work",
+      "catalogStatus": "fragment"
+    },
+    {
+      "id": "b8316cf3-ab0e-56ef-ad98-1554e585507e",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Symphony no. 40 in G minor, K.550",
+      "titleZh": "G小调第40交响曲",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "6fb57f3c-0cd6-5ccb-a7d5-7e1f952855a1",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Symphony no. 41 in C major, K.551, \"Jupiter\"",
+      "titleZh": "C大调第41交响曲《朱庇特》",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "fad5b06e-f896-5fea-a444-f12f37514a57",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "The Magic Flute, K.620",
+      "titleZh": "魔笛",
+      "genre": "Stage",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "41429c7c-ddc9-52cd-ab06-615aaee8fa80",
+      "composerId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "titleOriginal": "Serenade in G major, K.525, \"Eine Kleine Nachtmusik\"",
+      "titleZh": "G大调弦乐小夜曲",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "db5d41c9-6629-5a16-a341-00c8f8295558",
+      "composerId": "89f45ed4-c8ea-5405-a3d4-a50cae55e8c8",
+      "titleOriginal": "Symphony no. 5 in C minor, op. 67",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "04c00ce9-0645-5929-a123-788b023abf3b",
+      "composerId": "557bc25e-b6d0-58d0-a32f-d3eca659ce40",
+      "titleOriginal": "Symphony no. 8 in B minor, D.759, \"Unfinished\"",
+      "genre": "Orchestral",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    },
+    {
+      "id": "8ef3d1ee-5f3c-5e32-ae2a-75b496d65b07",
+      "composerId": "cc6087ac-e061-5ce9-abba-8541a604905a",
+      "titleOriginal": "Fantaisie-impromptu in C sharp minor, op. 66",
+      "genre": "Keyboard",
+      "kind": "work",
+      "catalogStatus": "confirmed"
+    }
+  ],
+  "workIdentifiers": [
+    {
+      "id": "842b7af3-f6a5-514b-ab60-8f272d43a5cf",
+      "workId": "7709e903-b111-5b77-a797-4b0418b87c19",
+      "system": "BWV",
+      "value": "BWV. 1048",
+      "normalizedValue": "bwv1048",
+      "sortKey": "BWV|0|0000001048|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "85d065a7-3657-578f-a482-785d8190376d",
+      "workId": "e22298f1-c7f3-5ab2-a49f-e532cfac597d",
+      "system": "RV",
+      "value": "RV. 269",
+      "normalizedValue": "rv269",
+      "sortKey": "RV|0|0000000269|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "d0dea52e-3b0a-5057-a9c2-724f81331ca7",
+      "workId": "e22298f1-c7f3-5ab2-a49f-e532cfac597d",
+      "system": "Op",
+      "value": "Op. 8, no. 1",
+      "normalizedValue": "op8no1",
+      "sortKey": "Op|0|0000000008|0|000001|0|",
+      "isPrimary": false
+    },
+    {
+      "id": "c1926ecb-9011-5900-a875-ff6ab02b0aea",
+      "workId": "d43490dc-aad8-5e00-a81d-74d0bd31cb2c",
+      "system": "Hob",
+      "value": "Hob. I:94",
+      "normalizedValue": "hobi94",
+      "sortKey": "Hob|0|0000000001|0|000094|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "ef52052c-2f6c-56ec-aee8-27802804c31c",
+      "workId": "5b3a0f18-4f91-5a68-ac92-7a080a7ece7d",
+      "system": "K",
+      "value": "K. 622",
+      "normalizedValue": "k622",
+      "sortKey": "K|0|0000000622|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "73a564ef-52ad-5d8f-a44c-d35bfde3df01",
+      "workId": "7623c0b8-e615-5bae-a4ff-e0154b5c863a",
+      "system": "K",
+      "value": "K. 581",
+      "normalizedValue": "k581",
+      "sortKey": "K|0|0000000581|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "92771a85-fb72-53e7-a35e-da299b44f7a5",
+      "workId": "7e5a93c7-ebd5-5da4-acf7-c50e18080ac7",
+      "system": "K",
+      "value": "K. 492",
+      "normalizedValue": "k492",
+      "sortKey": "K|0|0000000492|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "85e2489a-b90d-5596-ac08-de72a1897a73",
+      "workId": "b6b47509-3b1b-5c2a-af60-983c2bc5c738",
+      "system": "K",
+      "value": "K. 466",
+      "normalizedValue": "k466",
+      "sortKey": "K|0|0000000466|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "ca62e913-6297-51d4-ace4-21cf97540e5c",
+      "workId": "7abba76a-81ba-50e1-a9d4-3514c4851264",
+      "system": "K",
+      "value": "K. 467",
+      "normalizedValue": "k467",
+      "sortKey": "K|0|0000000467|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "9b54173a-5818-5377-a3a4-cc1f24302a95",
+      "workId": "4defac41-db20-5f4d-a3dd-da3ece2a975a",
+      "system": "K",
+      "value": "K. 488",
+      "normalizedValue": "k488",
+      "sortKey": "K|0|0000000488|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "757f65af-d6d8-5a68-aae9-18fb1a920aee",
+      "workId": "4a4ca9d1-5978-58f4-a078-5bdb12efa5dd",
+      "system": "K",
+      "value": "K. 331",
+      "normalizedValue": "k331",
+      "sortKey": "K|0|0000000331|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "5fac93dc-0f08-5538-a564-987def041f98",
+      "workId": "0925b185-c6b0-5eed-a567-ff45c5733e4a",
+      "system": "K",
+      "value": "K. 626",
+      "normalizedValue": "k626",
+      "sortKey": "K|0|0000000626|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "02160e35-6cd6-5f00-a131-dc7084abf28a",
+      "workId": "b8316cf3-ab0e-56ef-ad98-1554e585507e",
+      "system": "K",
+      "value": "K. 550",
+      "normalizedValue": "k550",
+      "sortKey": "K|0|0000000550|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "a52cc1e8-72a1-52ac-a3cb-9374d5b93529",
+      "workId": "6fb57f3c-0cd6-5ccb-a7d5-7e1f952855a1",
+      "system": "K",
+      "value": "K. 551",
+      "normalizedValue": "k551",
+      "sortKey": "K|0|0000000551|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "7722735b-3e85-53fa-a0ca-a6d3035f5802",
+      "workId": "fad5b06e-f896-5fea-a444-f12f37514a57",
+      "system": "K",
+      "value": "K. 620",
+      "normalizedValue": "k620",
+      "sortKey": "K|0|0000000620|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "d08a2079-d97b-54d4-a4fe-e412ec8371dc",
+      "workId": "41429c7c-ddc9-52cd-ab06-615aaee8fa80",
+      "system": "K",
+      "value": "K. 525",
+      "normalizedValue": "k525",
+      "sortKey": "K|0|0000000525|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "982ef511-398e-55ec-a5b3-0e248e6e6b34",
+      "workId": "db5d41c9-6629-5a16-a341-00c8f8295558",
+      "system": "Op",
+      "value": "Op. 67",
+      "normalizedValue": "op67",
+      "sortKey": "Op|0|0000000067|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "3994b731-f616-5d26-a6cd-9c8beccda11b",
+      "workId": "04c00ce9-0645-5929-a123-788b023abf3b",
+      "system": "D",
+      "value": "D. 759",
+      "normalizedValue": "d759",
+      "sortKey": "D|0|0000000759|0|000000|0|",
+      "isPrimary": true
+    },
+    {
+      "id": "55798396-e232-5967-ab60-9439d3aedee4",
+      "workId": "8ef3d1ee-5f3c-5e32-ae2a-75b496d65b07",
+      "system": "Op",
+      "value": "Op. 66",
+      "normalizedValue": "op66",
+      "sortKey": "Op|0|0000000066|0|000000|0|",
+      "isPrimary": true
+    }
+  ],
+  "workAliases": [
+    {
+      "id": "682b82a8-fb5f-5428-a04f-7553ffe8275e",
+      "workId": "d43490dc-aad8-5e00-a81d-74d0bd31cb2c",
+      "text": "Surprise",
+      "kind": "source"
+    },
+    {
+      "id": "8f0b1a84-4880-50ae-afe9-96ad13e6e615",
+      "workId": "7e5a93c7-ebd5-5da4-acf7-c50e18080ac7",
+      "text": "Opera",
+      "kind": "source"
+    },
+    {
+      "id": "d385a330-7af7-5c93-a0b9-119968dd736d",
+      "workId": "7e5a93c7-ebd5-5da4-acf7-c50e18080ac7",
+      "text": "Le nozze di Figaro",
+      "kind": "reviewed"
+    },
+    {
+      "id": "35b1fdd8-4dd6-5a7c-a9f9-d0591cfbdcf7",
+      "workId": "4a4ca9d1-5978-58f4-a078-5bdb12efa5dd",
+      "text": "Alla turca",
+      "kind": "reviewed"
+    },
+    {
+      "id": "7c416dd9-285c-5e7a-a145-ddc985be3ecd",
+      "workId": "4a4ca9d1-5978-58f4-a078-5bdb12efa5dd",
+      "text": "土耳其进行曲",
+      "kind": "reviewed"
+    },
+    {
+      "id": "c310e843-435f-5fb2-a50e-75d101621c22",
+      "workId": "6fb57f3c-0cd6-5ccb-a7d5-7e1f952855a1",
+      "text": "Jupiter",
+      "kind": "reviewed"
+    },
+    {
+      "id": "7362bcce-086d-52d1-adc8-142222da92fd",
+      "workId": "6fb57f3c-0cd6-5ccb-a7d5-7e1f952855a1",
+      "text": "朱庇特",
+      "kind": "reviewed"
+    },
+    {
+      "id": "3f604334-368d-5630-ad35-fda358defa8e",
+      "workId": "fad5b06e-f896-5fea-a444-f12f37514a57",
+      "text": "Opera",
+      "kind": "source"
+    },
+    {
+      "id": "0e225eae-032e-50d6-a645-be2983b4db17",
+      "workId": "fad5b06e-f896-5fea-a444-f12f37514a57",
+      "text": "Die Zauberflöte",
+      "kind": "reviewed"
+    },
+    {
+      "id": "26d3fa30-9dac-56e8-a8db-a37d77161426",
+      "workId": "fad5b06e-f896-5fea-a444-f12f37514a57",
+      "text": "The Magic Flute",
+      "kind": "reviewed"
+    },
+    {
+      "id": "6d84b6ba-6675-52b3-a575-c7a87179ecfe",
+      "workId": "41429c7c-ddc9-52cd-ab06-615aaee8fa80",
+      "text": "Eine Kleine Nachtmusik",
+      "kind": "source"
+    },
+    {
+      "id": "d101a162-64f4-559c-a48a-ee4f05d63cf3",
+      "workId": "41429c7c-ddc9-52cd-ab06-615aaee8fa80",
+      "text": "小夜曲",
+      "kind": "reviewed"
+    },
+    {
+      "id": "da0f83f8-9b98-56f9-a1ec-96f0ed45002b",
+      "workId": "41429c7c-ddc9-52cd-ab06-615aaee8fa80",
+      "text": "Eine kleine Nachtmusik",
+      "kind": "reviewed"
+    },
+    {
+      "id": "b0c0d05a-8e8c-5a6d-afc5-7c4f04951d32",
+      "workId": "04c00ce9-0645-5929-a123-788b023abf3b",
+      "text": "Unfinished",
+      "kind": "source"
+    }
+  ],
+  "sourceMappings": [
+    {
+      "id": "e8ebaa00-1c8f-52c8-ab1a-636292bac193",
+      "entityType": "composer",
+      "internalId": "06198325-ec62-504d-ad3d-2ce62d7e7dd7",
+      "sourceName": "Open Opus",
+      "sourceId": "87",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "c1b3650d-faad-5423-a93e-c147f1e9b7cf",
+      "entityType": "work",
+      "internalId": "7709e903-b111-5b77-a797-4b0418b87c19",
+      "sourceName": "Open Opus",
+      "sourceId": "9688",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "bab66dd6-9176-5305-a2f6-1cd1d787f5a2",
+      "entityType": "composer",
+      "internalId": "50f7dec6-efa1-55c9-a9fe-19931d21f8dc",
+      "sourceName": "Open Opus",
+      "sourceId": "98",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "93583ef2-00c5-59a5-a6be-3bd6e2676e0f",
+      "entityType": "work",
+      "internalId": "e22298f1-c7f3-5ab2-a49f-e532cfac597d",
+      "sourceName": "Open Opus",
+      "sourceId": "12085",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "610b75d7-dff0-5bcb-a816-cb826b4a1daa",
+      "entityType": "composer",
+      "internalId": "7ec4fa95-8cb9-52eb-a084-1f1e742aee8e",
+      "sourceName": "Open Opus",
+      "sourceId": "208",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "67acea54-d72e-5142-a4d3-fd605de848fc",
+      "entityType": "work",
+      "internalId": "d43490dc-aad8-5e00-a81d-74d0bd31cb2c",
+      "sourceName": "Open Opus",
+      "sourceId": "25919",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "41b3ffb9-8299-574c-a093-51b04692b029",
+      "entityType": "composer",
+      "internalId": "a0b239ba-819d-5c82-aa7d-25f8ea9b2064",
+      "sourceName": "Open Opus",
+      "sourceId": "196",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "2d8e7896-f58f-5563-a989-900ab16c6f13",
+      "entityType": "work",
+      "internalId": "5b3a0f18-4f91-5a68-ac92-7a080a7ece7d",
+      "sourceName": "Open Opus",
+      "sourceId": "23629",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "c4d05713-99d3-5345-a93e-27ac657b4159",
+      "entityType": "work",
+      "internalId": "7623c0b8-e615-5bae-a4ff-e0154b5c863a",
+      "sourceName": "Open Opus",
+      "sourceId": "23723",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "1e9582b2-6503-5278-a51c-cf253d779909",
+      "entityType": "work",
+      "internalId": "7e5a93c7-ebd5-5da4-acf7-c50e18080ac7",
+      "sourceName": "Open Opus",
+      "sourceId": "23812",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "6b864c1d-66a0-504a-a1c8-e42dbe92aa87",
+      "entityType": "work",
+      "internalId": "b6b47509-3b1b-5c2a-af60-983c2bc5c738",
+      "sourceName": "Open Opus",
+      "sourceId": "23310",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "f053fb0a-ffd2-5c42-a40f-8fac5e5feb6d",
+      "entityType": "work",
+      "internalId": "7abba76a-81ba-50e1-a9d4-3514c4851264",
+      "sourceName": "Open Opus",
+      "sourceId": "23315",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "2859167c-d639-5849-aa8c-be62bad264fe",
+      "entityType": "work",
+      "internalId": "4defac41-db20-5f4d-a3dd-da3ece2a975a",
+      "sourceName": "Open Opus",
+      "sourceId": "23302",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "7550002d-f6f5-5c2d-aeb1-ac8a8220ad7e",
+      "entityType": "work",
+      "internalId": "4a4ca9d1-5978-58f4-a078-5bdb12efa5dd",
+      "sourceName": "Open Opus",
+      "sourceId": "23512",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "236ecd75-1b88-5bdc-afc4-512e715ab3e0",
+      "entityType": "work",
+      "internalId": "0925b185-c6b0-5eed-a567-ff45c5733e4a",
+      "sourceName": "Open Opus",
+      "sourceId": "23646",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "f9077b88-71a0-585a-a4d2-647db11e1af7",
+      "entityType": "work",
+      "internalId": "b8316cf3-ab0e-56ef-ad98-1554e585507e",
+      "sourceName": "Open Opus",
+      "sourceId": "23611",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "14696e78-2961-5e0a-aa16-273e73546456",
+      "entityType": "work",
+      "internalId": "6fb57f3c-0cd6-5ccb-a7d5-7e1f952855a1",
+      "sourceName": "Open Opus",
+      "sourceId": "23353",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "7f0c8276-dc7a-5388-a685-e1cb0d9fc9b0",
+      "entityType": "work",
+      "internalId": "fad5b06e-f896-5fea-a444-f12f37514a57",
+      "sourceName": "Open Opus",
+      "sourceId": "23566",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "2559cbeb-9cbc-5f3b-adbb-67bf2b62e438",
+      "entityType": "work",
+      "internalId": "41429c7c-ddc9-52cd-ab06-615aaee8fa80",
+      "sourceName": "Open Opus",
+      "sourceId": "23610",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "33246139-fd98-5706-a9e5-c7bf6b5b5ae0",
+      "entityType": "composer",
+      "internalId": "89f45ed4-c8ea-5405-a3d4-a50cae55e8c8",
+      "sourceName": "Open Opus",
+      "sourceId": "145",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "4da6dc65-28da-52eb-a954-a11b2993fdcc",
+      "entityType": "work",
+      "internalId": "db5d41c9-6629-5a16-a341-00c8f8295558",
+      "sourceName": "Open Opus",
+      "sourceId": "16406",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "5761efb8-c005-576f-a499-2384a8f549a6",
+      "entityType": "composer",
+      "internalId": "557bc25e-b6d0-58d0-a32f-d3eca659ce40",
+      "sourceName": "Open Opus",
+      "sourceId": "183",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "39d0fa8e-c626-519e-aa2c-6a9ed67a9a26",
+      "entityType": "work",
+      "internalId": "04c00ce9-0645-5929-a123-788b023abf3b",
+      "sourceName": "Open Opus",
+      "sourceId": "20766",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "87981614-5d31-58b7-ad20-2b8fb0560a22",
+      "entityType": "composer",
+      "internalId": "cc6087ac-e061-5ce9-abba-8541a604905a",
+      "sourceName": "Open Opus",
+      "sourceId": "152",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    },
+    {
+      "id": "15a45a90-0d83-57ff-ad18-98e22d0b6c32",
+      "entityType": "work",
+      "internalId": "8ef3d1ee-5f3c-5e32-ae2a-75b496d65b07",
+      "sourceName": "Open Opus",
+      "sourceId": "17179",
+      "lastSeenAt": "2026-11-03T16:49:56.172Z"
+    }
+  ]
+}

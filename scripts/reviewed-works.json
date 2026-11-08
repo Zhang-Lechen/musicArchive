@@ -1,0 +1,80 @@
+[
+  {
+    "composer": "Mozart",
+    "number": "K. 331",
+    "titleZh": "A大调第11钢琴奏鸣曲《土耳其进行曲》",
+    "aliases": ["土耳其进行曲", "Alla turca"],
+    "reference": "https://dme.mozarteum.at/movi/en"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 466",
+    "titleZh": "D小调第20钢琴协奏曲",
+    "reference": "https://www.mozarthausvienna.at/en/geschichte-des-hauses"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 467",
+    "titleZh": "C大调第21钢琴协奏曲",
+    "reference": "https://www.mozarthausvienna.at/en/geschichte-des-hauses"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 488",
+    "titleZh": "A大调第23钢琴协奏曲",
+    "reference": "https://imslp.org/wiki/Neue_Mozart-Ausgabe"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 492",
+    "titleZh": "费加罗的婚礼",
+    "aliases": ["Le nozze di Figaro"],
+    "reference": "https://www.mozarthausvienna.at/en/geschichte-des-hauses"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 525",
+    "titleZh": "G大调弦乐小夜曲",
+    "aliases": ["小夜曲", "Eine kleine Nachtmusik"],
+    "reference": "https://www.mozartdocuments.org/koechel/"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 550",
+    "titleZh": "G小调第40交响曲",
+    "reference": "https://www.mozartdocuments.org/koechel/"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 551",
+    "titleZh": "C大调第41交响曲《朱庇特》",
+    "aliases": ["朱庇特", "Jupiter"],
+    "reference": "https://www.themorgan.org/exhibitions/online/mozart/439"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 581",
+    "titleZh": "A大调单簧管五重奏",
+    "reference": "https://dme.mozarteum.at/movi/en"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 620",
+    "titleZh": "魔笛",
+    "aliases": ["Die Zauberflöte", "The Magic Flute"],
+    "reference": "https://dme.mozarteum.at/movi/en"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 622",
+    "titleZh": "A大调单簧管协奏曲",
+    "reference": "https://archive.halle.co.uk/composer/mozart-wolfgang-amadeus"
+  },
+  {
+    "composer": "Mozart",
+    "number": "K. 626",
+    "titleZh": "D小调安魂曲",
+    "status": "fragment",
+    "reference": "https://mozarteum.at/en/digital-mozart-edition"
+  }
+]
