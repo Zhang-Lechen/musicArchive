@@ -1,4 +1,5 @@
 import Dexie, { type Table } from 'dexie';
+import type { SyncEntity, SyncMeta, PendingOperation } from '../sync/types';
 import { normalizeWork } from '../domain/types';
 import { listeningDateKey, validateDate } from '../domain/dates';
 import type {
@@ -36,6 +37,9 @@ export const schemaV2 = {
 };
 
 export class ArchiveDB extends Dexie {
+  sync_entities!: Table<SyncEntity, string>;
+  sync_meta!: Table<SyncMeta, string>;
+  sync_operations!: Table<PendingOperation, string>;
   composers!: Table<Composer, string>;
   works!: Table<Work, string>;
   work_identifiers!: Table<WorkIdentifier, string>;
@@ -84,10 +88,23 @@ export class ArchiveDB extends Dexie {
         // Never discard an old record/ID to make an ambiguous migration pass.
         await transaction.table('app_metadata').put({ key: 'schemaVersion', value: 2 });
       });
+    this.version(3)
+      .stores({
+        ...schemaV2,
+        sync_entities: 'key, dirty',
+        sync_meta: 'key',
+        sync_operations: 'operationId, &key',
+      })
+      .upgrade((tx) =>
+        tx
+          .table('app_metadata')
+          .put({ key: 'schemaVersion', value: 3 })
+          .then(() => undefined),
+      );
     this.on('populate', (transaction) =>
       transaction
         .table('app_metadata')
-        .put({ key: 'schemaVersion', value: 2 })
+        .put({ key: 'schemaVersion', value: 3 })
         .then(() => undefined),
     );
   }

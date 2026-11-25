@@ -1,3 +1,4 @@
+import { syncTransaction } from '../sync/local';
 import { db, type ArchiveDB } from '../db/database';
 import { localToday } from '../domain/dates';
 import type { Backup } from '../domain/types';
@@ -64,8 +65,9 @@ export function parseBackup(json: string) {
 
 export async function restoreBackup(value: unknown, database: ArchiveDB = db) {
   const { backup } = validateBackup(value);
-  await database.transaction('rw', database.tables, async () => {
-    for (const table of database.tables) await table.clear();
+  await syncTransaction(database, 'rw', database.tables, async () => {
+    for (const table of database.tables.filter((table) => !table.name.startsWith('sync_')))
+      await table.clear();
     await database.composers.bulkAdd(backup.composers);
     await database.works.bulkAdd(backup.works);
     await database.work_identifiers.bulkAdd(backup.workIdentifiers);
@@ -77,7 +79,7 @@ export async function restoreBackup(value: unknown, database: ArchiveDB = db) {
     await database.composer_preferences.bulkAdd(backup.composerPreferences);
     await database.work_preferences.bulkAdd(backup.workPreferences);
     await database.work_public_labels.bulkAdd(backup.workPublicLabels);
-    await database.app_metadata.put({ key: 'schemaVersion', value: 2 });
+    await database.app_metadata.put({ key: 'schemaVersion', value: 3 });
     await database.app_metadata.put({ key: 'restoredAt', value: new Date().toISOString() });
     // An explicitly restored backup is authoritative; don't reseed a deliberately empty archive.
     await database.app_metadata.put({ key: 'initialized', value: true });

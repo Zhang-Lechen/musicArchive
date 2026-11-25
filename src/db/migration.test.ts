@@ -80,13 +80,13 @@ afterEach(async () => {
   await Promise.all([...names].map((name) => Dexie.delete(name)));
 });
 
-describe('真实 v1 → v2 非破坏性迁移', () => {
+describe('真实 v1 → v3 非破坏性迁移', () => {
   it('保留 ID、时间戳、全部精度和元数据；零日期已听仍 completed，false 映射 unheard', async () => {
     const old = await legacyFixture();
     const oldRecords = await old.table('listening_records').toArray();
     const database = upgrade(old);
     await database.open();
-    expect(database.verno).toBe(2);
+    expect(database.verno).toBe(3);
     expect(await database.work_progress.get('unknown')).toEqual({
       workId: 'unknown',
       status: 'completed',
@@ -105,7 +105,7 @@ describe('真实 v1 → v2 非破坏性迁移', () => {
     ]);
     expect((await database.works.get('dated'))?.countPolicy).toBe('countable');
     expect((await database.app_metadata.get('seedVersion'))?.value).toBe('legacy');
-    expect((await database.app_metadata.get('schemaVersion'))?.value).toBe(2);
+    expect((await database.app_metadata.get('schemaVersion'))?.value).toBe(3);
     database.close();
     await database.open();
     expect(await database.listening_records.toArray()).toEqual(records);
@@ -153,4 +153,24 @@ describe('真实 v1 → v2 非破坏性迁移', () => {
       expect(await old.table('app_metadata').get('schemaVersion')).toBeUndefined();
     },
   );
+});
+
+it('v2 升级 v3 只增加同步表，个人行与原 ID 完整保留', async () => {
+  const { schemaV2 } = await import('./database');
+  const old = new Dexie(`test-v2-sync-${crypto.randomUUID()}`);
+  old.version(2).stores(schemaV2);
+  databases.push(old);
+  const preference = { workId: 'manual-id', isFavorite: true, isInQueue: true, updatedAt: now };
+  await old.table('work_preferences').put(preference);
+  await old.table('app_metadata').put({ key: 'schemaVersion', value: 2 });
+  const name = old.name;
+  old.close();
+  const next = new ArchiveDB(name);
+  databases.push(next);
+  await next.open();
+  expect(next.verno).toBe(3);
+  expect(await next.work_preferences.get('manual-id')).toEqual(preference);
+  expect((await next.app_metadata.get('schemaVersion'))?.value).toBe(3);
+  expect(await next.sync_entities.count()).toBe(0);
+  expect(await next.sync_operations.count()).toBe(0);
 });

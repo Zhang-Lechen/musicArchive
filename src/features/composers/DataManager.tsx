@@ -1,3 +1,4 @@
+import { SyncPanel } from '../sync/SyncPanel';
 import { useRef, useState } from 'react';
 import { Dialog } from '../../components/Dialog';
 import { useArchive } from '../../app/archive-context';
@@ -52,8 +53,9 @@ export function DataManager({ onClose }: { onClose: () => void }) {
       wide
     >
       <p className="muted">
-        档案仅保存在当前浏览器。清除站点数据、无痕模式或设备损坏可能导致丢失，请定期导出。
+        档案优先保存在当前浏览器。清除站点数据、无痕模式或设备损坏可能导致丢失，请定期导出。
       </p>
+      <SyncPanel />
       {error && (
         <p role="alert" className="inline-error">
           {error}

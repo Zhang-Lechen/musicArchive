@@ -364,7 +364,10 @@ test('关闭并重新启动浏览器后，个人档案仍保留', async ({ brows
   const profile = testInfo.outputPath('isolated-browser-profile');
   const options = {
     headless: true,
-    channel: process.env.PLAYWRIGHT_CHANNEL === 'chromium' ? undefined : 'msedge',
+    channel:
+      process.env.PLAYWRIGHT_CHANNEL === 'chromium'
+        ? undefined
+        : (process.env.PLAYWRIGHT_CHANNEL ?? 'msedge'),
     locale: 'zh-CN',
     timezoneId: 'Asia/Shanghai',
     baseURL: 'http://127.0.0.1:4175',

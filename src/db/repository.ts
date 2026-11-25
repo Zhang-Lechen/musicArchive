@@ -1,3 +1,4 @@
+import { syncTransaction } from '../sync/local';
 import type { ArchiveDB } from './database';
 import { db } from './database';
 import { listeningDateKey, localToday, validateDate } from '../domain/dates';
@@ -54,7 +55,8 @@ export class ArchiveRepository {
   }
 
   async getSnapshot(workId: string): Promise<WorkSnapshot> {
-    return this.database.transaction(
+    return syncTransaction(
+      this.database,
       'r',
       [this.database.work_progress, this.database.listening_records],
       async () => ({
@@ -69,7 +71,8 @@ export class ArchiveRepository {
     operation: (workId: string) => Promise<void>,
   ): Promise<UndoToken> {
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'rw',
       [database.works, database.work_progress, database.listening_records],
       async () => {
@@ -88,7 +91,8 @@ export class ArchiveRepository {
   }
   async undo(token: UndoToken) {
     const database = this.database;
-    await database.transaction(
+    await syncTransaction(
+      database,
       'rw',
       [database.works, database.work_progress, database.listening_records],
       async () => {
@@ -190,7 +194,8 @@ export class ArchiveRepository {
   async updateRecord(id: string, nextDate: DateInput) {
     this.validateInput(nextDate);
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'rw',
       [database.works, database.work_progress, database.listening_records],
       async () => {
@@ -286,7 +291,7 @@ export class ArchiveRepository {
   async putWork(work: Work) {
     const parsed = workSchema.parse(work);
     const database = this.database;
-    await database.transaction('rw', [database.composers, database.works], async () => {
+    await syncTransaction(database, 'rw', [database.composers, database.works], async () => {
       const works = await database.works.toArray();
       validateCatalog({
         composers: await database.composers.toArray(),
@@ -300,7 +305,8 @@ export class ArchiveRepository {
   }
   async putIdentifier(identifier: WorkIdentifier) {
     const database = this.database;
-    await database.transaction(
+    await syncTransaction(
+      database,
       'rw',
       [database.composers, database.works, database.work_identifiers],
       async () => {
@@ -320,7 +326,8 @@ export class ArchiveRepository {
   }
   async putAlias(alias: WorkAlias) {
     const database = this.database;
-    await database.transaction(
+    await syncTransaction(
+      database,
       'rw',
       [database.composers, database.works, database.work_aliases],
       async () => {
@@ -338,7 +345,8 @@ export class ArchiveRepository {
   async putComposerPreference(preference: ComposerPreference) {
     const parsed = composerPreferenceSchema.parse(preference);
     const database = this.database;
-    await database.transaction(
+    await syncTransaction(
+      database,
       'rw',
       [database.composers, database.composer_preferences],
       async () => {
@@ -359,7 +367,8 @@ export class ArchiveRepository {
     value: boolean,
   ) {
     const database = this.database;
-    await database.transaction(
+    await syncTransaction(
+      database,
       'rw',
       [database.composers, database.composer_preferences],
       async () => {
@@ -381,7 +390,7 @@ export class ArchiveRepository {
   }
   async setWorkPreference(workId: string, field: 'isFavorite' | 'isInQueue', value: boolean) {
     const database = this.database;
-    await database.transaction('rw', [database.works, database.work_preferences], async () => {
+    await syncTransaction(database, 'rw', [database.works, database.work_preferences], async () => {
       await this.requireWork(workId);
       const current = await this.getWorkPreference(workId);
       if ((current?.[field] ?? false) === value) return;
@@ -399,7 +408,8 @@ export class ArchiveRepository {
   }
   async preferredComposers() {
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'r',
       [database.composers, database.composer_preferences],
       async () => {
@@ -417,7 +427,8 @@ export class ArchiveRepository {
   }
   async preferredWorks() {
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'r',
       [
         database.works,
@@ -447,7 +458,7 @@ export class ArchiveRepository {
   async putWorkPreference(preference: WorkPreference) {
     const parsed = workPreferenceSchema.parse(preference);
     const database = this.database;
-    await database.transaction('rw', [database.works, database.work_preferences], async () => {
+    await syncTransaction(database, 'rw', [database.works, database.work_preferences], async () => {
       await this.requireWork(parsed.workId);
       await database.work_preferences.put(parsed);
     });
@@ -455,14 +466,20 @@ export class ArchiveRepository {
   async putPublicLabel(label: WorkPublicLabel) {
     const parsed = publicLabelSchema.parse(label);
     const database = this.database;
-    await database.transaction('rw', [database.works, database.work_public_labels], async () => {
-      await this.requireWork(parsed.workId);
-      await database.work_public_labels.put(parsed);
-    });
+    await syncTransaction(
+      database,
+      'rw',
+      [database.works, database.work_public_labels],
+      async () => {
+        await this.requireWork(parsed.workId);
+        await database.work_public_labels.put(parsed);
+      },
+    );
   }
   async listWorks(composerId: string): Promise<WorkView[]> {
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'r',
       [
         database.works,
@@ -504,7 +521,8 @@ export class ArchiveRepository {
   }
   async composerSummaries() {
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'r',
       [database.composers, database.works, database.work_progress, database.composer_preferences],
       async () => {
@@ -533,7 +551,8 @@ export class ArchiveRepository {
   }
   async listeningStatistics() {
     const database = this.database;
-    return database.transaction(
+    return syncTransaction(
+      database,
       'r',
       [database.composers, database.works, database.work_progress, database.listening_records],
       async () => {
@@ -554,7 +573,8 @@ export class ArchiveRepository {
   ) {
     const database = this.database;
     const workId = crypto.randomUUID();
-    return database.transaction(
+    return syncTransaction(
+      database,
       'rw',
       [database.composers, database.works, database.work_identifiers, database.work_aliases],
       async () => {

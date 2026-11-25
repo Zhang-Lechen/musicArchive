@@ -11,7 +11,10 @@ export default defineConfig({
   use: {
     baseURL: 'http://127.0.0.1:4175',
     browserName: 'chromium',
-    channel: process.env.PLAYWRIGHT_CHANNEL === 'chromium' ? undefined : 'msedge',
+    channel:
+      process.env.PLAYWRIGHT_CHANNEL === 'chromium'
+        ? undefined
+        : (process.env.PLAYWRIGHT_CHANNEL ?? 'msedge'),
     locale: 'zh-CN',
     timezoneId: 'Asia/Shanghai',
     viewport: { width: 1440, height: 1000 },
